@@ -4,7 +4,7 @@ int main(){
 	int n;
 	scanf("%d",&n);
 	int a[M]={0};
-	for(int i=1;i<n;i++){
+	for(int i=1;i<=n;i++){
 		scanf("%d",&a[i]);
 	}
 	long max=n;
