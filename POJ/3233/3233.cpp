@@ -1,4 +1,3 @@
-
 #include<stdio.h>
 #include<string.h>
 #include<algorithm>
@@ -12,6 +11,7 @@ struct matrix
     int mat[31][31];
 };
 int n,m;
+//ONE为单位阵 
 matrix ONE;
 matrix mul(matrix A,matrix B)//矩阵相乘
 {

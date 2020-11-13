@@ -11,11 +11,13 @@ bool check(int x)
     int cnt = 0;
     for(int i=0; i<n; i++)
     {
-       int t=upper_bound(a,a+n,a[i]+x)-a;//æ¯”a[i]+xå°çš„å…ƒç´ çš„ä¸ªæ•°
-       cnt+=(t-i-1);//æ’é™¤a[i]ä¹‹å‰çš„é‚£äº›å…ƒç´ ,å…±æœ‰i+1;
+       int t=upper_bound(a,a+n,a[i]+x)-a;//±Èa[i]+xĞ¡µÄÔªËØµÄ¸öÊı
+       cnt+=(t-i-1);//ÅÅ³ıa[i]Ö®Ç°µÄÄÇĞ©ÔªËØ,¹²ÓĞi+1;
     }
-    if(cnt>=temp) return true;  
-        else return false;
+    if(cnt>=temp) 
+		return true;  
+    else 
+		return false;
 }
 int main()
 {
@@ -28,12 +30,13 @@ int main()
          temp=(m+1)/2;
          int l=0,r=a[n-1]-a[0];
          int ans;
-         while(l<=r)//äºŒåˆ†æœç´¢
+         while(l<=r)//¶ş·ÖËÑË÷
          {
              int mid=(l+r)>>1;
              if(check(mid))
               ans=mid,r=mid-1;
-             else l=mid+1;
+             else 
+			 	l=mid+1;
          }
          printf("%d\n",ans);
     }

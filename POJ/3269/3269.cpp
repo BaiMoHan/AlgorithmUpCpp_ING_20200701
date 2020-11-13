@@ -9,7 +9,7 @@ int x[size];
 int y[size];
 int original_x[size];
 int original_y[size];
-int minn,plan;  //è®°å½•æœ€å°å€¼å’Œæ–¹æ¡ˆæ•°
+int minn,plan;  //¼ÇÂ¼×îĞ¡ÖµºÍ·½°¸Êı
  
 int dx[4] = { 1,-1,0,0 };
 int dy[4] = { 0,0,1,-1 };
@@ -24,12 +24,12 @@ int main() {
 	}
 	sort(x, x + n);
 	sort(y, y + n);
-	if (n % 2 == 1) {  // å¦‚æœnæ˜¯å¥‡æ•°
+	if (n % 2 == 1) {  // Èç¹ûnÊÇÆæÊı
 		int middle = n / 2;
 		for (int i = 0; i < n; i++) {
-			if (x[middle] == original_x[i] && y[middle] == original_y[i]) {  //å¦‚æœä¸ºç»™å‡ºçš„æ”¾ç‰§ç‚¹
+			if (x[middle] == original_x[i] && y[middle] == original_y[i]) {  //Èç¹ûÎª¸ø³öµÄ·ÅÄÁµã
 				minn = INF;
-				for (int j = 0; j < 4; j++) { //æšä¸¾å››ä¸ªæ–¹å‘ä¸Šçš„ç‚¹
+				for (int j = 0; j < 4; j++) { //Ã¶¾ÙËÄ¸ö·½ÏòÉÏµÄµã
 					int temp_x = x[middle] + dx[j];
 					int temp_y = y[middle] + dy[j];
 					int temp_minn = 0;
@@ -49,12 +49,12 @@ int main() {
 			plan = 1;
 		}
 	}
-	else {  //å¦‚æœnæ˜¯å¶æ•°
+	else {  //Èç¹ûnÊÇÅ¼Êı
 		int middle1 = n / 2 - 1;
 		int middle2 = n / 2;
 		plan = (x[middle2] - x[middle1] + 1)*(y[middle2] - y[middle1] + 1);
 		for (int i = 0; i < n; i++) {
-			minn += abs(x[middle1] - x[i]) + abs(y[middle1] - y[i]);      //éšä¾¿é€‰ä¸€ä¸ªåŒºåŸŸå†…çš„ç‚¹éƒ½è¡Œï¼Œå› ä¸ºåœ¨è¿™ä¸ªåŒºåŸŸå†…çš„æœ€å°å€¼ç›¸åŒ
+			minn += abs(x[middle1] - x[i]) + abs(y[middle1] - y[i]);      //Ëæ±ãÑ¡Ò»¸öÇøÓòÄÚµÄµã¶¼ĞĞ£¬ÒòÎªÔÚÕâ¸öÇøÓòÄÚµÄ×îĞ¡ÖµÏàÍ¬
 			if (original_x[i] <= x[middle2] && original_x[i] >= x[middle1] && original_y[i] <= y[middle2] && original_y[i] >= y[middle1])
 				plan--;
 		}
