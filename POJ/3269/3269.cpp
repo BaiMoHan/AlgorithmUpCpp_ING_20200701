@@ -1,9 +1,10 @@
 #include<iostream>
 #include<algorithm>
-using namespace std;
+
  
 #define size 10010       //2 <= N <= 10000
 #define INF 0x3f3f3f3f
+using namespace std;
  
 int x[size];
 int y[size];

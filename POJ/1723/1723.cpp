@@ -4,7 +4,6 @@
 #include <cstring>
 #include <algorithm>
 using namespace std;
-
 #define maxn 10004
 
 int n;

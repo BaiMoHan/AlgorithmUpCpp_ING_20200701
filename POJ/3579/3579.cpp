@@ -6,6 +6,7 @@ using namespace std;
 int a[100000+5];
 int n;
 int temp;
+
 bool check(int x)
 {
     int cnt = 0;
@@ -19,6 +20,7 @@ bool check(int x)
     else 
 		return false;
 }
+
 int main()
 {
     while(scanf("%d",&n)!=EOF)
