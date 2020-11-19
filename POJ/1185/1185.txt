@@ -1,9 +1,0 @@
-输入样例#1：
-5 4
-PHPP
-PPHH
-PPPP
-PHPP
-PHHP
-输出样例#1：
-6
