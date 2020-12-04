@@ -1,6 +1,10 @@
 #include<stdio.h>
+#define OJ 98 
 #define M 1001
 int main(){
+	#ifndef OJ
+	freopen("201403-1.txt","r",stdin);
+	#endif
 	int n;
 	scanf("%d",&n);
 	int a[M]={0};
@@ -17,5 +21,8 @@ int main(){
 			count++;
 	}
 	printf("%d",count);
+	#ifndef OJ
+	fclose(stdin);
+	#endif
 	return 0;
 } 
