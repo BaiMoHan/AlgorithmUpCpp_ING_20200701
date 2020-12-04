@@ -1,4 +1,5 @@
-#include<stdio.h>\
+#include<stdio.h>
+#define OJ 98 
 #define M 11
 struct Node{
 	int x1,x2;
@@ -6,6 +7,9 @@ struct Node{
 	int num;
 }note[11];
 int main(){
+	#ifndef OJ
+	freopen("201403-2.txt","r",stdin);
+	#endif
 	int n,m;
 	scanf("%d %d",&n,&m);
 	int a,b;
@@ -47,5 +51,8 @@ int main(){
 		if(i+1!=m)
 			printf("\n");		
 	}
+	#ifndef OJ
+	fclose(stdin);
+	#endif
 	return 0;
 }
