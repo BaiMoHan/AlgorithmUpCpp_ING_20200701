@@ -2,7 +2,7 @@
 #define _rep(a,b,c) for(int (a)=(b);(a)<(c);(a)++)
 #define N 103
 int ball[N][2];//ball[i][0]为坐标,ball[i][1]为移动速度矢量 
-//#define OJ 98
+#define OJ 98
 using namespace std;
 int main()
 {
