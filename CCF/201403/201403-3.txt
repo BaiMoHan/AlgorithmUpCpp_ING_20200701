@@ -1,0 +1,22 @@
+abde:w:o:zl
+
+5
+ls -w 34 -o -c -w 4523 -o
+ls -a -d -f -o 99 -a
+ls -l aa
+ls -o aoweijas
+ls 
+
+albw:x
+4
+ls -a -l -a documents -b
+ls 
+ls -w 10 -x -w 15
+ls -a -b -c -d -e -l
+
+
+output
+Case 1: -a -l
+Case 2:
+Case 3: -w 15 -x
+Case 4: -a -b
