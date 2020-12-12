@@ -1,0 +1,29 @@
+11 2
+<!DOCTYPE html>
+<html>
+<head>
+<title>User {{ name }}</title>
+</head>
+<body>
+<h1>{{ name }}</h1>
+<p>Email: <a href="mailto:{{ email }}">{{ email }}</a></p>
+<p>Address: {{ address }}</p>
+</body>
+</html>
+name "David Beckham"
+email "david@beckham.com"
+
+
+output
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>User David Beckham</title>
+</head>
+<body>
+<h1>David Beckham</h1>
+<p>Email: <a href="mailto:david@beckham.com">david@beckham.com</a></p>
+<p>Address: </p>
+</body>
+</html>
